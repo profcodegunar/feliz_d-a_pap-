@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Día del Padre | Colegio Emanuel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <div class="bg-effects" aria-hidden="true">
+    <span class="heart h1">❤</span>
+    <span class="heart h2">💙</span>
+    <span class="heart h3">✨</span>
+    <span class="heart h4">⭐</span>
+    <span class="heart h5">🎈</span>
+    <span class="light l1"></span>
+    <span class="light l2"></span>
+    <span class="light l3"></span>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <img src="img/logo.png" alt="Logo Colegio Emanuel" class="logo" />
+      <div>
+        <strong>Colegio Emanuel</strong>
+        <small>2do de Secundaria</small>
+      </div>
+    </div>
+    <nav class="actions">
+      <button class="btn ghost" id="btnGallery">Ver galería</button>
+      <button class="btn music" id="btnMusic">Activar música</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-card reveal">
+        <img src="img/logo.png" alt="Logo Colegio Emanuel" class="hero-logo" />
+        <p class="badge">Celebración especial</p>
+        <h1>Feliz Día del Padre</h1>
+        <h2>Con amor, gratitud y admiración para nuestros papitos del 2do de Secundaria</h2>
+        <p class="verse">“El justo camina en su integridad; bienaventurados serán sus hijos después de él.”</p>
+        <p class="verse-ref">Proverbios 20:7</p>
+        <div class="hero-buttons">
+          <button class="btn primary" id="btnStart">Iniciar presentación</button>
+          <button class="btn secondary" id="btnSeeGallery">Ver galería</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider-section" id="presentacion">
+      <div class="section-title">
+        <p>Presentación animada</p>
+        <h2>Papá, mi héroe de todos los días</h2>
+      </div>
+
+      <div class="slider-wrap">
+        <button class="arrow" id="prevBtn" aria-label="Anterior">‹</button>
+        <article class="slide-card" id="slideCard">
+          <div class="photo-frame">
+            <img id="slideImage" src="img/1.jpeg" alt="Foto de papá" />
+            <div class="shine"></div>
+          </div>
+          <div class="message-box">
+            <p class="number" id="slideNumber">01 / 14</p>
+            <h3 id="slideTitle">Para un papá especial</h3>
+            <p id="slideText">Papá, gracias por ser mi guía, mi fuerza y mi mayor ejemplo.</p>
+          </div>
+        </article>
+        <button class="arrow" id="nextBtn" aria-label="Siguiente">›</button>
+      </div>
+
+      <div class="control-panel">
+        <button class="btn primary" id="autoBtn">Carrusel automático</button>
+        <button class="btn secondary" id="pauseBtn">Pausar</button>
+      </div>
+    </section>
+
+    <section class="gallery" id="galeria">
+      <div class="section-title">
+        <p>Galería familiar</p>
+        <h2>Gracias por tu amor, papá</h2>
+      </div>
+      <div class="grid" id="galleryGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Con cariño para todos los padres del 2do de Secundaria | Colegio Emanuel</p>
+  </footer>
+
+  <audio id="bgMusic" loop>
+    <source src="audio/musica.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

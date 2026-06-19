@@ -1,0 +1,5 @@
+Coloca aquí tu música de fondo con el nombre exacto:
+
+musica.mp3
+
+Luego el botón “Activar música” funcionará automáticamente.
